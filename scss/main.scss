@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: black;
+}
+
+#app{
+    max-width: 1170px;
+    margin: 0 auto;
+    background-color: #eee;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #00000015;
+
+    &-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        gap: 10px;
+        img{
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+    }
+
+    &-body{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &-footer{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+        font-size: 2rem;
+    }
+}
